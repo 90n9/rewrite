@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Rewrite",
+  "version": "1.0",
+  "description": "Update word in clipboard via Ollama",
+  "permissions": [
+    "offscreen",
+    "clipboardRead",
+    "clipboardWrite",
+    "activeTab",
+    "scripting",
+    "storage",
+    "sidePanel",
+    "declarativeNetRequest",
+    "unlimitedStorage",
+    "contextMenus",
+    "tts",
+    "notifications"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "host_permissions": ["http://localhost/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}
